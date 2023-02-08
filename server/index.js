@@ -6,6 +6,7 @@ import bodyParser from 'body-parser'
 import indexRoutes from './routes/index.routes'
 import imagesRoutes from './routes/imagenes.route'
 import usersRoutes from './routes/users.routes'
+import contactosRoutes from './routes/contactos.routes'
 
 const morgan = require('morgan')
 
@@ -34,6 +35,7 @@ app.use(morgan('dev'))
 app.use(indexRoutes)
 app.use(imagesRoutes)
 app.use(usersRoutes)
+app.use(contactosRoutes)
 
 app.listen(app.get('port'))
 console.log('Server on port: ', app.get('port'))

@@ -3,7 +3,7 @@ import { encrypt, compare } from "../hellpers/handleBcrypt"
 
 const mongoose = require('mongoose')
 import User from '../models/users'
-import config from '../config'
+
 
 const router = Router()
 
